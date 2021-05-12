@@ -96,8 +96,8 @@ jobs:
         #echo "自定义项=y" >> .config
         #########################################################################################
         sudo ./clear_tree
-        sudo ./build_firmware_modify $TNAME 0
-        sudo mv -f images/*.trx /opt/images/
+        sudo ./build_firmware_modify $TNAME B70
+        sudo mv -f images/B70.trx /opt/images/
     - name : Upload packages
       uses: actions/upload-artifact@master
       if: always()
